@@ -165,7 +165,49 @@
   }
 }
 
+.services-inner{
+  padding: 47px 147px;
+  background-color: #fef7f0;
+  display: flex;
+  justify-content: space-between;
+  &__item{
+    display: flex;
+    position: relative;
+  }
+  &__item::before{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 36px;
+    top: 40px;
+    background-color: #dfe3e2;
+    border-radius: 50%;
+    opacity: .8;
+  }
+  &__img{
+    margin-right: 25px;
+    margin-top: 12px;
+    width: 49px;
+    height: 49px;
+  }
+  &__info{
+    width: 225px;
 
+  }
+  &__title{
+    @extend %dmsans-700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #414141;
+  }
+  &__text{
+    @extend %dmsans-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #585858;
+  }
+}
 
 
 
