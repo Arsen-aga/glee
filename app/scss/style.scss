@@ -1,6 +1,7 @@
 @import "vars";
 @import "fonts";
 @import "reset";
+@import "libs";
 @import "global";
 
 .header {
@@ -80,10 +81,97 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #a3bbc8;
+    background-color: $btnColor;
     cursor: pointer;
   }
 }
+
+.slider{
+  background-image: url('../images/slider/slider-bg.png');
+  background-repeat: no-repeat;
+  background-position: 990px center;
+}
+.slider-inner{
+  background-color: #fcd7b6;
+  padding: 225px 300px 280px;
+  &__icon{
+    display: flex !important;
+    justify-content: space-between;
+  }
+  &__content{
+    max-width: 412px;
+    margin-right: 118px;
+  }
+  &__icon-title{
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+    margin-bottom: 42px;
+  }
+  &__icon-subtitle{
+    @extend %rubik-400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #436372;
+    margin-bottom: 45px;
+  }
+  &__icon-btn{
+    display: flex;
+    justify-content: space-between;
+    background-color: #a3bbc8;
+    max-width: 200px;
+    height: 60px;
+    padding: 23px 27px;
+    @extend %rubik-500;
+    font-size: 15px;
+    color: #fff;
+  }
+  &__icon-arrow{
+    width: 22px;
+    height: 9px;
+    margin-top: 3px;
+    fill: #fff;
+    fill-rule: evenodd;
+  }
+  &__icon-img{
+    margin-top: 80px;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 45px;
+    button{
+      border: none;
+      background-color: #fff;
+      width: 29px;
+      height: 29px;
+      border-radius: 50%;
+      opacity: 0.6;
+      margin-right: 12px;
+      @extend %rubik-500;
+      font-size: 11px;
+      color: #243f4d;
+    }
+    .slick-active{
+      button{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
 
 .footer-top{
   display: flex;
@@ -100,8 +188,7 @@
   &__icon-link{
     display: block;
     @extend %rubik-400;
-    color: #7b7b7b;
-    font-size: 14px;
+    @extend %footerText;
     line-height: 24px;
     text-transform: none;
   }
@@ -118,14 +205,12 @@
     text-transform: uppercase;
   }
   &__item-link{
-    color: #7b7b7b;
     margin-bottom: 17px;
-    font-size: 14px;
+    @extend %footerText;
     line-height: 32px;
   }
   &__icon-subscribe{
-    color: #7b7b7b;
-    font-size: 14px;
+    @extend %footerText;
     line-height: 24px;
     width: 240px;
     margin-bottom: 36px;
@@ -143,7 +228,7 @@
   }
   &__form-btn{
     border: none;
-    background-color: #a3bbc8;
+    background-color: $btnColor;
     padding: 14px 17px 13px;
     @extend %dmsans-400;
     font-size: 14px;
@@ -158,8 +243,7 @@
   justify-content: space-between;
   &__copy{
     @extend %rubik-400;
-    font-size: 14px;
-    color: #7b7b7b;
+    @extend %footerText;
   }
   &__nav{
     display: flex;
@@ -172,8 +256,7 @@
   }
   &__nav-link{
     @extend %rubik-400;
-    font-size: 14px;
-    color: #7b7b7b;
+    @extend %footerText;
   }
 
 }
