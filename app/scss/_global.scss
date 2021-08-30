@@ -23,3 +23,22 @@ body{
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.filter-btn {
+  display: flex;
+  justify-content: center;
+  &__icon {
+    border: none;
+    background-color: transparent;
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #8b8b8b;
+    cursor: pointer;
+  }
+  &__icon + .filter-btn__icon {
+    margin-left: 15px;
+  }
+  .mixitup-control-active {
+    color: #191919;
+  }
+}

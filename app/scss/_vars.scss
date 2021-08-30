@@ -29,3 +29,10 @@ $btnColor: #a3bbc8;
   font-size: 14px;
   color: #7b7b7b;
 }
+%title{
+  text-align: center;
+  @extend %dmsans-700;
+  font-size: 36px;
+  color: #191919;
+  margin-bottom: 36px;
+}
