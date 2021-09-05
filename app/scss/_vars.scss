@@ -36,3 +36,15 @@ $btnColor: #a3bbc8;
   color: #191919;
   margin-bottom: 36px;
 }
+%disFxCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// @function max($numbers...){
+//   @return m#{a}x(#{$numbers});
+// }
+// @function min($numbers...){
+//   @return m#{i}n(#{$numbers});
+// }

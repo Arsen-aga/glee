@@ -1,3 +1,4 @@
+
 $(function () {
   $('.slider-inner').slick({
     dots: true,
@@ -6,6 +7,25 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 2000
   });
-
-  var mixer = mixitup('.products__mix-items');
+  
+  var mixer = mixitup('.products__mix-items',{
+    animation: {
+      duration: 357,
+      nudge: true,
+      reverseOut: true,
+      effects: "fade scale(0.01) translateY(20%) rotateX(90deg)"
+    }
+  }).show();
+  
+  
+  var mixer2 = mixitup('.ndesign__mix-items',{
+    animation: {
+      duration: 357,
+      nudge: true,
+      reverseOut: true,
+      effects: "fade scale(0.01) translateY(20%) rotateX(90deg)"
+    }
+  }).show();
+  
 });
+
