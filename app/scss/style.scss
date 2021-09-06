@@ -409,14 +409,14 @@
     @extend %disFxCenter;
     text-align: center;
   }
-  &__fancybox-play{
+  &__fancybox-play {
     width: 127px;
     height: 127px;
     border-radius: 50%;
     background-color: rgba(163, 187, 200, 0.6);
     @extend %disFxCenter;
   }
-  &__fancybox-link{
+  &__fancybox-link {
     width: 98px;
     height: 98px;
     border-radius: 50%;
@@ -426,14 +426,103 @@
   &__fancybox-play:hover {
     background-color: #a3bbc8;
   }
-  
-  &__fancybox-play:hover .ndesign__fancybox-img path{
+
+  &__fancybox-play:hover .ndesign__fancybox-img path {
     fill: #2081b6;
   }
 
-  
   &__fancybox-img path {
     fill: #fff;
+  }
+}
+
+.articles {
+  margin-top: 118px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 52px;
+  }
+  .title {
+    @extend %title;
+    margin-bottom: 0;
+  }
+  &__top-link {
+    @extend %dmsans-700;
+    font-size: 16px;
+    color: #262626;
+  }
+  &__top-link::after {
+    content: url("../images/icons/arrow-link-r.svg");
+    margin-left: 23px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 370px;
+    overflow: hidden;
+    position: relative;
+  }
+  &__item-icon {
+    position: absolute;
+    padding: 10px 31px;
+    background-color: #a3bbc8;
+    border-radius: 20px;
+    top: 230px;
+    left: 28px;
+    @extend %poppins-700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+  }
+  &__item-content {
+    padding: 34px 28px 26px;
+    height: 42%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+  &__item-text {
+    padding: 0 4px 18px;
+    @extend %dmsans-700;
+    font-size: 18px;
+    color: #262626;
+  }
+  &__item-info{
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
+  }
+  &__item-date {
+    @extend %rubik-500;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16px;
+    color: #222933;
+    margin-right: 28px;
+  }
+  &__item-buy {
+    @extend %rubik-500;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16px;
+    color: #222933;
+  }
+  &__bottom {
+    margin-top: -189px;
+    padding-top: 189px + 94px;
+    background-color: #fef7f0;
+    padding-bottom: 90px;
+  }
+  &__bottom-inner{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
