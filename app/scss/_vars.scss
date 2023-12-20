@@ -1,0 +1,70 @@
+$accent: #243f4d;
+$default: #436372;
+$black-title: #191919;
+$darck-title: #1f2044;
+$placeholder-text: #234969;
+
+$title: #29282d;
+
+$pink-bg: #fcd7b6;
+$blue-bg: #a3bbc8;
+$gray-bg: #f8f8f8;
+
+// blue text
+// #a3bbc8
+
+// gray text
+// #414141
+// #585858
+// #7b7b7b
+// #8b8b8b
+
+// black text
+// #191919
+// #262626
+// #222933
+
+
+
+
+
+%dmsans-400 {
+  font-family: 'DMSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%dmsans-500 {
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%dmsans-700 {
+  font-family: 'DMSans-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%rubik-400 {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%poppins-700 {
+  font-family: 'Poppins-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%btn {
+  // background-color: $accent;
+  // text-transform: uppercase;
+  // border: none;
+  // color: #fff;
+  // padding: 12px 26px;
+  // @extend %roboto-400;
+  // box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+  // cursor: pointer;
+}

@@ -1,0 +1,84 @@
+.header {
+  padding: 48px 0 54px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .menu__list-link {
+    @extend %rubik-500;
+  }
+
+  &__list-link:hover {
+    color: $accent;
+  }
+
+  &__list-add {
+    display: none;
+  }
+
+  &__list-link--new &__list-add {
+    display: inline-block;
+  }
+}
+
+.user-nav {
+  display: flex;
+  gap: 20px;
+
+  &__search {
+    padding: 18px;
+    background-color: transparentize($blue-bg, .6);
+    border-radius: 25px;
+  }
+
+  &__likes {
+    display: flex;
+    background-color: $pink-bg;
+    border-radius: 25px;
+    padding: 10px 14px;
+  }
+
+  &__likes-link {
+    padding: 0 28px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+  }
+
+  &__likes-link:nth-child(1) {
+    border-right: 1px solid #ffffff40;
+  }
+
+  &__num {
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__add {
+    background-color: $blue-bg;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    cursor: pointer;
+  }
+}
